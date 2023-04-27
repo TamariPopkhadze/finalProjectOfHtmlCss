@@ -1,0 +1,189 @@
+.irubaqidze{
+    font-family: "BPG Irubaqidze", sans-serif;
+}
+.dedaena{
+    font-family: "BPG DedaEna Nonblock", sans-serif;
+}
+.alk{
+    font-family: "ALK Life", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: lightblue;
+}
+header{
+    padding-top: 1%;
+    display: flex;
+    
+   
+   
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15%;
+    align-items: end;
+    justify-content: space-evenly;
+   
+   
+
+}
+.name-div{
+    display: flex;
+    width: min-content;
+    align-items:end;
+    gap: 5px;
+    position: relative;
+    
+}
+.house-icon{
+    width: 50px;
+    height: 50px;
+    
+    
+}
+.fa-heart{
+
+    position: absolute;
+    top: 20px;
+    left: 16.5px;
+   
+    
+}
+@keyframes heart{
+    from{color:rgb(238, 224, 234)}
+    to{
+        color: rgb(228, 98, 174)
+    }
+}
+.heart{
+    width: 5px;
+    height: 5px;
+    color:lightpink;
+    animation-name: heart;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+.name{
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(228, 98, 174);
+   
+    
+}
+
+ul{
+    display: flex;
+    gap: 60PX;
+}
+.li-design{
+    font-size: 18px;
+    color: dodgerblue;
+    }
+.li-design:hover{
+    
+    color:rgb(228, 98, 174) ;
+    transition: all 1s;
+} 
+main{
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-container{
+    margin-top: 2%;
+    display: flex;
+    margin-left: 10%;
+    position: relative;}  
+.img1{
+    width: 35%;
+    height: 64.5%;
+    object-fit: cover;
+} 
+.img2{
+    
+    width: 26%;
+    height: 26%;
+    object-fit: cover;
+    
+
+}
+.img4{
+    
+    
+    width: 52%;
+    height: 40%;
+    object-fit: cover;
+    margin-top: 17%;
+    margin-left: -52%;
+    
+}
+.main-div1{
+    border-radius: 5px;
+    width: 33%;
+    height: 28%;
+    background-color: rgb(116, 123, 131);
+    position: absolute;
+    left: 24%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    align-items:center;
+    opacity: 80%;
+    padding-top: 2%;
+    
+   
+}
+.chef-hat{
+    width: 100px;
+    height: 100px;
+    
+    
+}
+.div1-p{
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 32px;
+    line-height: normal;
+    text-align: center;
+}
+.let-in{
+    display: flex;
+    background-color: rgb(88, 150, 201);
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+   
+
+}
+.letin-p{
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+.let-in:hover{
+    background-color: white;
+    transition: 2s;
+}
+.letin-p:hover{
+    
+    color: rgb(88, 150, 201);
+    transition: 2s;
+}
+footer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+    border-top: 2px solid red;
+}
