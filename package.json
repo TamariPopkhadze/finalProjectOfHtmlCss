@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "alk-life": "^1.0.0",
+    "arial-geo": "^1.0.0",
     "bpg-dedaena-nonblock": "^1.0.0",
     "bpg-irubaqidze": "^1.0.0",
     "bpg-nuskha-modern": "^1.0.0"
