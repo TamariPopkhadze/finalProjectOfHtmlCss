@@ -1,33 +1,231 @@
 .geo {
-    font-family: "Arial GEO", sans-serif;
-  }
-  .irubaqidze {
-    font-family: "BPG Irubaqidze", sans-serif;
-  }
-  .dedaena {
-    font-family: "BPG DedaEna Nonblock", sans-serif;
-  }
-  .alk {
-    font-family: "ALK Life", sans-serif;
-  }
-  body {
-    min-height: 100vh;
-  
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-  }
-  header {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-  }
+  font-family: "Arial GEO", sans-serif;
+}
+.irubaqidze {
+  font-family: "BPG Irubaqidze", sans-serif;
+}
+.dedaena {
+  font-family: "BPG DedaEna Nonblock", sans-serif;
+}
+.alk {
+  font-family: "ALK Life", sans-serif;
+}
+nav{
+  display: none;
+  height: 800px;
+  width: 83%;
+  margin-top: 30px;
+}
+.home_icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50%;
+  width: 100%;
+}
+body {
+  min-height: 100vh;
+
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.name-div {
+  display: flex;
+  width: min-content;
+  align-items: end;
+  gap: 5px;
+  position: relative;
+}
+.fa-heart {
+  position: absolute;
+  top: 10px;
+  left: 7px;
+}
+.heart {
+  width: 1px;
+  height: 1px;
+  color: lightpink;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.name {
+  display: flex;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: rgb(228, 98, 174);
+}
+.house-icon {
+  width: 30px;
+  height: 30px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.li_design {
+  font-size: 20px;
+  color: dodgerblue;
+  letter-spacing: 3px;
+  transition: all 0.5s ease-in;
+}
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1.5%;
+  margin-bottom: 0.5%;
+}
+.right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.twoImage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.main_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.img1 {
+  width: 300px;
+  height: 300px;
+  background-image: url("./images/cake.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  background-color: azure;
+
+  cursor: pointer;
+}
+
+.img2 {
+  width: 300px;
+  height: 300px;
+  background-image: url("./images/kuchmachi.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.img3 {
+  width: 300px;
+  height: 300px;
+  background-image: url("./images/georgian-salad.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.img4 {
+  background-image: url("./images/khachapuri.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.main-div1{
+  display: none;
+}
+footer {
+  margin-top: 50px;
+  border-top: 10px dotted rgb(228, 98, 174);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
+  gap: 20px;
+}
+.footer_info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 300px;
+  padding-left: 25px;
+  gap: 10px;
+}
+
+.addres {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 132, 183);
+}
+.information-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.information {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.contact > p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact > a {
+  color: #0caed6;
+  font-size: 16px;
+}
+
+@media (min-width: 1440px) {
   .header-container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    flex-direction: row;
     width: 100%;
+    gap: 15%;
+    align-items: end;
+    justify-content: space-evenly;
   }
   .name-div {
     display: flex;
@@ -36,14 +234,26 @@
     gap: 5px;
     position: relative;
   }
+  .house-icon {
+    width: 50px;
+    height: 50px;
+  }
   .fa-heart {
     position: absolute;
-    top: 10px;
-    left: 7px;
+    top: 20px;
+    left: 16.5px;
+  }
+  @keyframes heart {
+    from {
+      color: rgb(238, 224, 234);
+    }
+    to {
+      color: rgb(228, 98, 174);
+    }
   }
   .heart {
-    width: 1px;
-    height: 1px;
+    width: 5px;
+    height: 5px;
     color: lightpink;
     animation-name: heart;
     animation-duration: 5s;
@@ -51,129 +261,193 @@
   }
   .name {
     display: flex;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 900;
     letter-spacing: 2px;
     color: rgb(228, 98, 174);
   }
-  .house-icon {
-    width: 30px;
-    height: 30px;
-  }
+
   ul {
     display: flex;
-    gap: 20px;
+    gap: 60px;
+  }
+  .active {
+    font-size: 18px;
+    color: rgb(228, 98, 174);
+    letter-spacing: 3px;
   }
   .li_design {
-    font-size: 12px;
+    font-size: 18px;
     color: dodgerblue;
     letter-spacing: 3px;
     transition: all 0.5s ease-in;
+  }
+  .li_design:hover {
+    color: rgb(228, 98, 174);
+    transition: all 0.5s ease;
   }
   main {
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    flex-direction: row;
     margin-top: 1.5%;
     margin-bottom: 0.5%;
+    gap: 0;
   }
   .right {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
   }
   .twoImage {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+ 
+    gap: 0;
   }
   .main_container {
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
   }
   .img1 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 700px;
     background-image: url("./images/cake.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
     background-color: azure;
-  
+
     cursor: pointer;
   }
-  
+  .img1:hover {
+    opacity: 0.5;
+    box-shadow: 0 5.063rem 5.188rem rgba(31, 50, 81, 0.12),
+      0 5.063rem 5.125rem rgba(31, 50, 81, 0.24);
+  }
   .img2 {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 350px;
     background-image: url("./images/kuchmachi.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
+    border-radius: 0px 0px 0px 0px ;
     cursor: pointer;
   }
-  
+  .img2:hover {
+    opacity: 0.5;
+    box-shadow: 0 5.063rem 5.188rem rgba(31, 50, 81, 0.12),
+      0 5.063rem 5.125rem rgba(31, 50, 81, 0.24);
+  }
   .img3 {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 350px;
     background-image: url("./images/georgian-salad.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
+    border-radius: 0px 15px 0px 0px;
     cursor: pointer;
   }
-  
+  .img3:hover {
+    opacity: 0.5;
+    box-shadow: 0 5.063rem 5.188rem rgba(31, 50, 81, 0.12),
+      0 5.063rem 5.125rem rgba(31, 50, 81, 0.24);
+  }
   .img4 {
     background-image: url("./images/khachapuri.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
+    width: 1000px;
+    height: 350px;
+    border-radius: 0px 0px 15px 0px;
     cursor: pointer;
   }
-  .main-div1{
-    display: none;
+  .img4:hover {
+    opacity: 0.5;
+    box-shadow: 0 5.063rem 5.188rem rgba(31, 50, 81, 0.12),
+      0 5.063rem 5.125rem rgba(31, 50, 81, 0.24);
   }
+  .main-div1 {
+    border-radius: 5px;
+    width: 33%;
+    height: 28%;
+    background-color: rgb(116, 123, 131);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    align-items: center;
+    opacity: 80%;
+    padding-top: 2%;
+  }
+  .chef-hat {
+    width: 100px;
+    height: 100px;
+  }
+  .div1-p {
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 32px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  button {
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(88, 150, 201);
+    width: 250px;
+    height: 70px;
+    transition: all 0.5s ease-in;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(88, 150, 201);
+    transition: all 0.5s ease-in;
+  }
+
   footer {
-    margin-top: 50px;
+    margin-top: 10px;
     border-top: 10px dotted rgb(228, 98, 174);
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
-    gap: 20px;
+    gap: 400px;
   }
   .footer_info {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 300px;
-    padding-left: 25px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 600px;
     gap: 10px;
   }
-  
+
   .addres {
     display: flex;
     gap: 10px;
     align-items: center;
   }
   .circle {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -182,7 +456,7 @@
   }
   .information-div {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 10px;
   }
   .information {
@@ -204,267 +478,4 @@
     color: #0caed6;
     font-size: 16px;
   }
-  
-  
-  @media (min-width: 1440px) {
-    .header-container {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      gap: 15%;
-      align-items: end;
-      justify-content: space-evenly;
-    }
-    .name-div {
-      display: flex;
-      width: min-content;
-      align-items: end;
-      gap: 5px;
-      position: relative;
-    }
-    .house-icon {
-      width: 50px;
-      height: 50px;
-    }
-    .fa-heart {
-      position: absolute;
-      top: 20px;
-      left: 16.5px;
-    }
-    @keyframes heart {
-      from {
-        color: rgb(238, 224, 234);
-      }
-      to {
-        color: rgb(228, 98, 174);
-      }
-    }
-    .heart {
-      width: 5px;
-      height: 5px;
-      color: lightpink;
-      animation-name: heart;
-      animation-duration: 5s;
-      animation-iteration-count: infinite;
-    }
-    .name {
-      display: flex;
-      font-size: 30px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      color: rgb(228, 98, 174);
-    }
-  
-    ul {
-      display: flex;
-      gap: 60px;
-    }
-    .active {
-      font-size: 18px;
-      color: rgb(228, 98, 174);
-      letter-spacing: 3px;
-    }
-    .li_design {
-      font-size: 18px;
-      color: dodgerblue;
-      letter-spacing: 3px;
-      transition: all 0.5s ease-in;
-    }
-    .li_design:hover {
-      color: rgb(228, 98, 174);
-      transition: all 0.5s ease;
-    }
-    main {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      margin-top: 1.5%;
-      margin-bottom: 0.5%;
-      gap: 0;
-    }
-    .right {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      gap: 0;
-    }
-    .twoImage {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-   
-      gap: 0;
-    }
-    .main_container {
-      width: 100%;
-      display: flex;
-      align-items: center;
-    }
-    .img1 {
-      width: 400px;
-      height: 700px;
-      background-image: url("./images/cake.jpg");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 15px 0px 0px 15px;
-      background-color: azure;
-  
-      cursor: pointer;
-    }
-    .img1:hover {
-      opacity: 0.5;
-      box-shadow: 0 5.063rem 5.188rem rgba(31, 50, 81, 0.12),
-        0 5.063rem 5.125rem rgba(31, 50, 81, 0.24);
-    }
-    .img2 {
-      width: 500px;
-      height: 350px;
-      background-image: url("./images/kuchmachi.jpg");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 0px 0px 0px 0px ;
-      cursor: pointer;
-    }
-    .img2:hover {
-      opacity: 0.5;
-      box-shadow: 0 5.063rem 5.188rem rgba(31, 50, 81, 0.12),
-        0 5.063rem 5.125rem rgba(31, 50, 81, 0.24);
-    }
-    .img3 {
-      width: 500px;
-      height: 350px;
-      background-image: url("./images/georgian-salad.jpg");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 0px 15px 0px 0px;
-      cursor: pointer;
-    }
-    .img3:hover {
-      opacity: 0.5;
-      box-shadow: 0 5.063rem 5.188rem rgba(31, 50, 81, 0.12),
-        0 5.063rem 5.125rem rgba(31, 50, 81, 0.24);
-    }
-    .img4 {
-      background-image: url("./images/khachapuri.jpg");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 1000px;
-      height: 350px;
-      border-radius: 0px 0px 15px 0px;
-      cursor: pointer;
-    }
-    .img4:hover {
-      opacity: 0.5;
-      box-shadow: 0 5.063rem 5.188rem rgba(31, 50, 81, 0.12),
-        0 5.063rem 5.125rem rgba(31, 50, 81, 0.24);
-    }
-    .main-div1 {
-      border-radius: 5px;
-      width: 33%;
-      height: 28%;
-      background-color: rgb(116, 123, 131);
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      gap: 8%;
-      align-items: center;
-      opacity: 80%;
-      padding-top: 2%;
-    }
-    .chef-hat {
-      width: 100px;
-      height: 100px;
-    }
-    .div1-p {
-      font-weight: 700;
-      color: aliceblue;
-      font-size: 32px;
-      line-height: normal;
-      text-align: center;
-    }
-  
-    button {
-      letter-spacing: 2px;
-      font-weight: 500;
-      font-size: 20px;
-      color: white;
-      background-color: rgb(88, 150, 201);
-      width: 250px;
-      height: 70px;
-      transition: all 0.5s ease-in;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: rgb(255, 255, 255);
-      color: rgb(88, 150, 201);
-      transition: all 0.5s ease-in;
-    }
-  
-    footer {
-      margin-top: 10px;
-      border-top: 10px dotted rgb(228, 98, 174);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      width: 100%;
-      gap: 400px;
-    }
-    .footer_info {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: row;
-      width: 600px;
-      gap: 10px;
-    }
-  
-    .addres {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-    }
-    .circle {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(219, 132, 183);
-    }
-    .information-div {
-      display: flex;
-      align-items: baseline;
-      gap: 10px;
-    }
-    .information {
-      font-weight: 400;
-      font-size: 24px;
-      color: white;
-    }
-    .contact > p {
-      color: white;
-      font-size: 20px;
-      font-weight: 400;
-    }
-    .contact {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-    .contact > a {
-      color: #0caed6;
-      font-size: 16px;
-    }
-    
-  }
+}

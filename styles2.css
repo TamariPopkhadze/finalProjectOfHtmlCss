@@ -1,0 +1,180 @@
+.geo {
+    font-family: "Arial GEO", sans-serif;
+  }
+  .irubaqidze {
+    font-family: "BPG Irubaqidze", sans-serif;
+  }
+  .dedaena {
+    font-family: "BPG DedaEna Nonblock", sans-serif;
+  }
+  .alk {
+    font-family: "ALK Life", sans-serif;
+  }
+  body{
+    min-height: 100vh;
+    background-image: url('./images/back.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+
+  }
+  .home_icon{
+    padding-top: 2%;
+    padding-left: 2%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50%;
+    width: 100%;
+  }
+  .name-div {
+    display: flex;
+    width: min-content;
+    align-items: end;
+    gap: 5px;
+    position: relative;
+  }
+  .fa-heart {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+  }
+  @keyframes heart{
+    from {
+      color: lightpink
+    }
+    to {
+      color:rgb(228, 98, 174) 
+    }
+    
+  }
+  .heart {
+    width: 1px;
+    height: 1px;
+    color: lightpink;
+    animation-name: heart;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .name {
+    display: flex;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(228, 98, 174);
+  }
+  .house-icon {
+    width: 30px;
+    height: 30px;
+  }
+  main{
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .container1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .child{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .img{
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .title-price{
+    position: absolute;
+    left: 70px;
+    top: 18%;
+    display: none;
+    transition: all 5s ease-in-out;
+    
+  }
+  .title{
+    text-align: start;
+    font-size: 32px;
+    font-weight: 900;
+    color: rgb(102, 88, 58);
+  }
+  .price{
+    font-weight: 700;
+    color: rgb(99, 82, 61);
+    text-align: center;
+  }
+  .child:hover .title-price{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    transition: all 5s ease-in-out;
+    }
+  .child:hover .img{
+    opacity: 0.5;
+    transition: 3s;
+  }  
+  footer {
+    margin-top: 50px;
+    border-top: 10px dotted rgb(226, 221, 170);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    gap: 20px;
+  }
+  .footer_info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+    padding-left: 25px;
+    gap: 10px;
+  }
+  
+  .addres {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 206, 137);
+  }
+  .information-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .information {
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+  }
+  .contact > p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .contact > a {
+    color: #0caed6;
+    font-size: 16px;
+  }
