@@ -1,55 +1,281 @@
 .geo {
-    font-family: "Arial GEO", sans-serif;
+  font-family: "Arial GEO", sans-serif;
+}
+.irubaqidze {
+  font-family: "BPG Irubaqidze", sans-serif;
+}
+.dedaena {
+  font-family: "BPG DedaEna Nonblock", sans-serif;
+}
+.alk {
+  font-family: "ALK Life", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-image: url("./images/back.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+header {
+  margin-bottom: 10%;
+  margin-top: 20px;
+}
+nav {
+  display: none;
+  height: 800px;
+  width: 83%;
+  margin-top: 30px;
+  margin-left: 22%;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.active {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+.li_design {
+  font-size: 30px;
+  font-weight: 500;
+  color: dodgerblue;
+  letter-spacing: 3px;
+  transition: all 0.5s ease-in;
+}
+.home_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50%;
+  width: 100%;
+}
+.name-div {
+  display: flex;
+  width: min-content;
+  align-items: end;
+  gap: 5px;
+  position: relative;
+}
+.fa-heart {
+  position: absolute;
+  top: 10px;
+  left: 7px;
+}
+@keyframes heart {
+  from {
+    color: lightpink;
   }
-  .irubaqidze {
-    font-family: "BPG Irubaqidze", sans-serif;
+  to {
+    color: rgb(228, 98, 174);
   }
-  .dedaena {
-    font-family: "BPG DedaEna Nonblock", sans-serif;
-  }
-  .alk {
-    font-family: "ALK Life", sans-serif;
-  }
-  body{
-    min-height: 100vh;
-    background-image: url('./images/back.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    
+}
+.heart {
+  width: 1px;
+  height: 1px;
+  color: lightpink;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.name {
+  display: flex;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: rgb(228, 98, 174);
+}
+.house-icon {
+  width: 30px;
+  height: 30px;
+}
+main {
+  margin-top: 2%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.child {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.img {
+  border-radius: 10px;
+  width: 250px;
+  height: 150px;
+  opacity: 1;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
 
+.title_price {
+  position: absolute;
+  left: 70px;
+  top: 18%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.title {
+  text-align: start;
+  font-size: 32px;
+  font-weight: 900;
+  color: rgb(102, 88, 58);
+  letter-spacing: 3px;
+}
+.price {
+  font-weight: 700;
+  color: rgb(99, 82, 61);
+  text-align: center;
+}
+.li_design:hover {
+  color: rgb(228, 98, 174);
+  transition: all 0.5s ease;
+}
+.child:hover .title_price {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.child:hover .img {
+  opacity: 0.3;
+  transition: all 0.5s ease-in-out;
+}
+footer {
+  margin-top: 50px;
+  border-top: 10px dotted rgb(226, 221, 170);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
+  gap: 20px;
+}
+.footer_info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 300px;
+  padding-left: 25px;
+  gap: 10px;
+}
+
+.addres {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 206, 137);
+}
+.information-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.information {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 3px;
+}
+.contact > p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact > a {
+  color: #0caed6;
+  font-size: 16px;
+}
+
+@media (min-width:768px) {
+  .container1{
+    width: 80%;
   }
-  .home_icon{
-    padding-top: 2%;
-    padding-left: 2%;
+  .footer_info {
     display: flex;
-    justify-content: flex-start;
-    gap: 50%;
+    align-items: flex-start;
+    flex-direction: row;
+    width: auto;
+    gap: 30px;
+  }
+}
+@media (min-width:1024px) {
+  .Menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .home_icon {
+    width: auto;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
     width: 100%;
-  }
-  .name-div {
-    display: flex;
-    width: min-content;
+    gap: 15%;
     align-items: end;
-    gap: 5px;
-    position: relative;
+    justify-content: space-evenly;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 20px;
+  }
+  .house-icon {
+    width: 50px;
+    height: 50px;
   }
   .fa-heart {
     position: absolute;
-    top: 10px;
-    left: 7px;
+    top: 20px;
+    left: 16.5px;
   }
-  @keyframes heart{
+  @keyframes heart {
     from {
-      color: lightpink
+      color: rgb(238, 224, 234);
     }
     to {
-      color:rgb(228, 98, 174) 
+      color: rgb(228, 98, 174);
     }
-    
   }
   .heart {
-    width: 1px;
-    height: 1px;
+    width: 5px;
+    height: 5px;
     color: lightpink;
     animation-name: heart;
     animation-duration: 5s;
@@ -57,97 +283,44 @@
   }
   .name {
     display: flex;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 900;
     letter-spacing: 2px;
     color: rgb(228, 98, 174);
   }
-  .house-icon {
-    width: 30px;
-    height: 30px;
+  .li_design {
+    font-size: 20px;
   }
-  main{
-    margin-top: 2%;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  .active {
+    font-size: 20px;
   }
-  .container1{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .child{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .img{
+  .img {
     border-radius: 10px;
-    width: 250px;
-    height: 150px;
+    width: 400px;
+    height: 350px;
     object-fit: cover;
+    cursor: pointer;
   }
-  
-  .title-price{
-    position: absolute;
-    left: 70px;
-    top: 18%;
-    display: none;
-    transition: all 5s ease-in-out;
-    
-  }
-  .title{
-    text-align: start;
-    font-size: 32px;
-    font-weight: 900;
-    color: rgb(102, 88, 58);
-  }
-  .price{
-    font-weight: 700;
-    color: rgb(99, 82, 61);
-    text-align: center;
-  }
-  .child:hover .title-price{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    transition: all 5s ease-in-out;
-    }
-  .child:hover .img{
-    opacity: 0.5;
-    transition: 3s;
-  }  
+
   footer {
-    margin-top: 50px;
-    border-top: 10px dotted rgb(226, 221, 170);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    width: 100%;
-    gap: 20px;
+    justify-content: center;
   }
   .footer_info {
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
-    width: 300px;
-    padding-left: 25px;
-    gap: 10px;
+    flex-direction: row;
+    width: auto;
+    gap: 30px;
   }
-  
+
   .addres {
     display: flex;
     gap: 10px;
     align-items: center;
   }
   .circle {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -161,12 +334,13 @@
   }
   .information {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     color: white;
+    letter-spacing: 3px;
   }
   .contact > p {
     color: white;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 400;
   }
   .contact {
@@ -176,5 +350,136 @@
   }
   .contact > a {
     color: #0caed6;
-    font-size: 16px;
+    font-size: 20px;
   }
+}
+@media (min-width: 1440px) {
+  .Menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .home_icon {
+    width: auto;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 100%;
+    gap: 15%;
+    align-items: end;
+    justify-content: space-evenly;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+  .house-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .fa-heart {
+    position: absolute;
+    top: 20px;
+    left: 16.5px;
+  }
+  @keyframes heart {
+    from {
+      color: rgb(238, 224, 234);
+    }
+    to {
+      color: rgb(228, 98, 174);
+    }
+  }
+  .heart {
+    width: 5px;
+    height: 5px;
+    color: lightpink;
+    animation-name: heart;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .name {
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(228, 98, 174);
+  }
+  .li_design {
+    font-size: 20px;
+  }
+  .active {
+    font-size: 20px;
+  }
+  .img {
+    border-radius: 10px;
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+  }
+  .footer_info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: auto;
+    gap: 30px;
+  }
+
+  .addres {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 206, 137);
+  }
+  .information-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .information {
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 3px;
+  }
+  .contact > p {
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .contact > a {
+    color: #0caed6;
+    font-size: 20px;
+  }
+}

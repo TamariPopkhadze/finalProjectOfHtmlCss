@@ -13,7 +13,6 @@
 nav{
   display: none;
   height: 800px;
-  width: 83%;
   margin-top: 30px;
 }
 .home_icon{
@@ -67,6 +66,10 @@ header {
   font-weight: 900;
   letter-spacing: 2px;
   color: rgb(228, 98, 174);
+}
+.active{
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 .house-icon {
   width: 30px;
@@ -219,13 +222,29 @@ footer {
 }
 
 @media (min-width: 1440px) {
-  .header-container {
+  .Menu{
+    display: none;
+  }
+  nav{
+    display:flex;
+    align-items: center;
+    height: auto;
+    width: 40%;
+    margin-top: 30px;
+
+  }
+  .home_icon{
+    width: auto;
+  }
+  header{
+    display: flex;
+    align-items: center;
+  }
+  
+  ul{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    gap: 15%;
-    align-items: end;
-    justify-content: space-evenly;
+    width: auto;
   }
   .name-div {
     display: flex;
@@ -234,6 +253,15 @@ footer {
     gap: 5px;
     position: relative;
   }
+  .header-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15%;
+    align-items: end;
+    justify-content: space-evenly;
+
+}
   .house-icon {
     width: 50px;
     height: 50px;
@@ -267,10 +295,7 @@ footer {
     color: rgb(228, 98, 174);
   }
 
-  ul {
-    display: flex;
-    gap: 60px;
-  }
+
   .active {
     font-size: 18px;
     color: rgb(228, 98, 174);
