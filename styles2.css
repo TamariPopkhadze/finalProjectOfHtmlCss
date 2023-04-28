@@ -129,7 +129,7 @@ main {
 }
 .title {
   text-align: start;
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 900;
   color: rgb(102, 88, 58);
   letter-spacing: 3px;
@@ -455,7 +455,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(243, 206, 137);
+    background-color: rgb(197, 243, 137);
   }
   .information-div {
     display: flex;
@@ -465,7 +465,7 @@ footer {
   .information {
     font-weight: 400;
     font-size: 30px;
-    color: white;
+    color: rgb(155, 226, 127);
     letter-spacing: 3px;
   }
   .contact > p {
