@@ -35,7 +35,8 @@ ul {
 .active {
   font-size: 30px;
   letter-spacing: 3px;
-  font-weight: 500;
+
+  color: rgb(228, 98, 174);
 }
 .li_design {
   font-size: 30px;
