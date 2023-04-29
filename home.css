@@ -10,17 +10,37 @@
 .alk {
   font-family: "ALK Life", sans-serif;
 }
-nav{
-  display: none;
-  height: 800px;
-  margin-top: 30px;
-}
+
 .home_icon{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50%;
   width: 100%;
+}
+nav {
+  display: none;
+  height: 800px;
+  width: 83%;
+  margin-top: 30px;
+  margin-left: 22%;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.active {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: rgb(228, 98, 174);
+}
+.li_design {
+  font-size: 30px;
+  font-weight: 500;
+  color: dodgerblue;
+  letter-spacing: 3px;
+  transition: all 0.5s ease-in;
 }
 body {
   min-height: 100vh;
@@ -67,25 +87,13 @@ header {
   letter-spacing: 2px;
   color: rgb(228, 98, 174);
 }
-.active{
-  font-size: 20px;
-  letter-spacing: 3px;
-}
+
 .house-icon {
   width: 30px;
   height: 30px;
 }
-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.li_design {
-  font-size: 20px;
-  color: dodgerblue;
-  letter-spacing: 3px;
-  transition: all 0.5s ease-in;
-}
+
+
 main {
   width: 100%;
   display: flex;

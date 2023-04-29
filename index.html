@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <link rel="stylesheet" href="reset.css" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>სახლური/რეგისტრაცია</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="./registrationStyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="სახლური საცხობი">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Tamari Popkhadze">
@@ -13,32 +14,33 @@
     <meta property="og:title"              content="საცხობი სახლური" />
     <meta property="og:description"        content="საცხობის აღწერა" />
     <meta property="og:image"              content="https://static.vecteezy.com/system/resources/previews/006/050/466/original/bakery-background-with-colorful-bread-illustration-free-vector.jpg" />
-    <title>სახლური/რეგისტრაცია</title>
-    <link rel="stylesheet" type="text/css" href="./registrationStyle.css" >
     <link
       rel="stylesheet"
       href="node_modules/arial-geo/css/arial-geo.min.css"
-    >
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    >
+    />
     <link
       rel="stylesheet"
       href="node_modules/bpg-dedaena-nonblock/css/bpg-dedaena-nonblock.min.css"
-    >
+    />
     <link
       rel="stylesheet"
       href="node_modules/bpg-irubaqidze/css/bpg-irubaqidze.min.css"
-    >
-    <link rel="stylesheet" href="node_modules/alk-life/css/alk-life.min.css" >
+    />
+    <link rel="stylesheet" href="node_modules/alk-life/css/alk-life.min.css" />
+    <link rel = "icon" href = "./images/home.png" 
+            type = "./image/house-icon">
+    <title>სახლური/რეგისტრაცია</title>
   </head>
   <body>
     <header>
       <div class="header-container">
         <div class="home_icon">
           <div class="name-div">
-            <img class="house-icon" src="./images/home.png" alt="house" >
+            <img class="house-icon" src="./images/home.png" alt="house" />
             <i class="fa-solid fa-heart heart"></i>
 
             <p class="name irubaqidze">სახლური</p>
@@ -47,11 +49,11 @@
     <div class="title">
       <h1 class="dedaena welcome">შემოგიერთდი</h1>
     </div>
-    <form action="first.html">
+    <form action="home.html">
       <div class="formm">
         <input
           type="text"
-          id="username"
+         
           name="username"
           class="formm input"
           placeholder=" "
@@ -64,7 +66,6 @@
         
         <input
           type="password"
-          id="password"
           name="password"
           class="formm input"
           placeholder=" "
@@ -77,12 +78,12 @@
         <input
           type="password"
           id="password"
-          name="password"
+          name="password2"
           class="formm input"
           placeholder=" "
           required
         />
-        <label for="password"class="geo label" >გაიმეორეთ პაროლი</label>
+        <label for="password2" class="geo label" >გაიმეორეთ პაროლი</label>
       </div>
       <input type="submit" value="შესვლა" class="submit" />
     </form>
