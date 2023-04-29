@@ -1,0 +1,166 @@
+.geo {
+  font-family: "Arial GEO", sans-serif;
+}
+.irubaqidze {
+  font-family: "BPG Irubaqidze", sans-serif;
+}
+.dedaena {
+  font-family: "BPG DedaEna Nonblock", sans-serif;
+}
+.alk {
+  font-family: "ALK Life", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+ background-image: url("./images/1.jpg");
+ background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 1.2rem;
+}
+.title {
+  margin-bottom: 40px;
+  color: white;
+}
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.welcome{
+  font-weight: 500;
+  font-size: 32px;
+  color: lightpink;
+}
+.formm {
+  position: relative;
+  width: 20rem;
+  height: 3rem;
+}
+.input {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e1e5ee;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: rgb(63, 143, 196);
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+.input:hover {
+  border-color: #adffff;
+}
+
+.input:focus {
+  border-color: #18ffff;
+}
+
+.label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: rgb(193, 104, 235);
+  cursor: text;
+  font-size: 16px;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  
+}
+.submit {
+  width: 100px;
+  height: 30px;
+  background-color: #8b5292;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.submit:hover{
+   background-color:  #18ffff ;
+   color: rgb(190, 79, 181);
+   transition: all 0.5s ease-in-out;
+}
+.input:focus ~ .label,
+.input:not(:placeholder-shown).input:not(:focus) ~ .label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.signUP{
+    color: white;
+    text-decoration: none;
+}
+.signUP:hover{
+    color: #18ffff ;
+}
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.home_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50%;
+  width: 100%;
+}
+.name-div {
+  display: flex;
+  width: min-content;
+  align-items: end;
+  gap: 5px;
+  position: relative;
+}
+.fa-heart {
+  position: absolute;
+  top: 10px;
+  left: 7px;
+}
+@keyframes heart {
+  from {
+    color: lightpink;
+  }
+  to {
+    color: rgb(228, 98, 174);
+  }
+}
+.heart {
+  width: 1px;
+  height: 1px;
+  color: lightpink;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.name {
+  display: flex;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: rgb(228, 98, 174);
+}
+.house-icon {
+  width: 30px;
+  height: 30px;
+}

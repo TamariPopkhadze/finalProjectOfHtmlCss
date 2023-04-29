@@ -1,0 +1,273 @@
+.geo {
+    font-family: "Arial GEO", sans-serif;
+  }
+  .irubaqidze {
+    font-family: "BPG Irubaqidze", sans-serif;
+  }
+  .dedaena {
+    font-family: "BPG DedaEna Nonblock", sans-serif;
+  }
+  .alk {
+    font-family: "ALK Life", sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    background-image: url("./საკონდიტრო/fbaccc5e7df2c1e9e28fd9f8a401bc08.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  header {
+    margin-bottom: 10%;
+    margin-top: 20px;
+  }
+  .home_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
+    width: 100%;
+  }
+  .name-div {
+    display: flex;
+    width: min-content;
+    align-items: end;
+    gap: 5px;
+    position: relative;
+  }
+  .fa-heart {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+  }
+  @keyframes heart {
+    from {
+      color: lightpink;
+    }
+    to {
+      color: rgb(228, 98, 174);
+    }
+  }
+  .heart {
+    width: 1px;
+    height: 1px;
+    color: lightpink;
+    animation-name: heart;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .name {
+    display: flex;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(228, 98, 174);
+  }
+  .house-icon {
+    width: 30px;
+    height: 30px;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  .section1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+  }
+  .piece{
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: 4px;
+    color: rgb(228, 133, 148);
+  }
+  .section1-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+  }
+  .section1-img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    object-position:center;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  .child {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .title_price {
+    position: absolute;
+    left: 45px;
+    top: 18%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .title {
+    text-align: start;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(230, 111, 230);
+    letter-spacing: 3px;
+  }
+  .price {
+    font-weight: 700;
+    color: rgb(172, 41, 165);
+    text-align: center;
+  }
+  .child:hover .title_price {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .child:hover .section1-img {
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
+  }
+  .section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .section2-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+  }
+  .section2-img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    object-position:center;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  .mincakes{
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: rgb(228, 133, 148);
+   }
+   .section2-childdiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: lightpink;
+   }
+   .section2-childdiv:hover .section2-img {
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
+  }
+  .section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .section3-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+  }
+  .section3-img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position:center;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  .orders{
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: rgb(228, 133, 148);
+   }
+   .section3-childdiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: lightpink;
+   }
+   .section3-childdiv:hover .section3-img {
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
+  }
+  footer {
+    margin-top: 50px;
+    border-top: 10px dotted rgb(230, 194, 235);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    gap: 20px;
+  }
+  .footer_info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+    padding-left: 25px;
+    gap: 10px;
+  }
+  
+  .addres {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 137, 243);
+  }
+  .information-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .information {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(231, 221, 231);
+    letter-spacing: 3px;
+  }
+  .contact > p {
+    color: rgb(228, 233, 220);
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .contact > a {
+    color: #0caed6;
+    font-size: 16px;
+  }
+  

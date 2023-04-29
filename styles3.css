@@ -131,12 +131,12 @@
     text-align: start;
     font-size: 25px;
     font-weight: 900;
-    color: rgb(183, 212, 113);
+    color: rgb(99, 124, 41);
     letter-spacing: 3px;
   }
   .price {
     font-weight: 700;
-    color: rgb(118, 145, 57);
+    color: rgb(84, 107, 29);
     text-align: center;
   }
   .li_design:hover {
@@ -194,11 +194,11 @@
   .information {
     font-weight: 400;
     font-size: 20px;
-    color: rgb(204, 216, 98);
+    color: rgb(117, 128, 26);
     letter-spacing: 3px;
   }
   .contact > p {
-    color: rgb(174, 216, 96);
+    color: rgb(75, 100, 27);
     font-size: 20px;
     font-weight: 400;
   }
@@ -335,11 +335,11 @@
     .information {
       font-weight: 400;
       font-size: 30px;
-      color: rgb(190, 223, 100);
+      color: rgb(114, 141, 41);
       letter-spacing: 3px;
     }
     .contact > p {
-      color: rgb(200, 221, 122);
+      color: rgb(80, 97, 20);
       font-size: 23px;
       font-weight: 400;
     }
@@ -465,11 +465,11 @@
     .information {
       font-weight: 400;
       font-size: 30px;
-      color: rgb(173, 206, 95);
+      color: rgb(126, 167, 31);
       letter-spacing: 3px;
     }
     .contact > p {
-      color: rgb(200, 230, 131);
+      color: rgb(55, 71, 17);
       font-size: 23px;
       font-weight: 400;
     }

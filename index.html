@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="reset.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>სახლური/რეგისტრაცია</title>
+    <link rel="stylesheet" type="text/css" href="./registrationStyle.css" />
     <link
       rel="stylesheet"
       href="node_modules/arial-geo/css/arial-geo.min.css"
@@ -22,8 +20,6 @@
       href="node_modules/bpg-irubaqidze/css/bpg-irubaqidze.min.css"
     />
     <link rel="stylesheet" href="node_modules/alk-life/css/alk-life.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>სახლური</title>
   </head>
   <body>
     <header>
@@ -35,79 +31,48 @@
 
             <p class="name irubaqidze">სახლური</p>
           </div>
-          
-         <i class="Menu fa-solid fa-bars fa-xl" style="color: #d279c2;"></i>
-        </div>
-        <nav>
-          <ul>
-            <li><a class="dedaena active" href="index.html">მთავარი</a></li>
-            <li><a class="dedaena li_design" href="##">საკონდიტრო</a></li>
-            <li><a class="dedaena li_design" href="second.html">ცომეული</a></li>
-            <li><a class="dedaena li_design" href="third.html">მზა პროდუქტი</a></li>
-          </ul>
-        </nav>
-      </div>
     </header>
-    <main>
-      <div class="img1"></div>
-      <div class="right">
-        <div class="twoImage">
-          <div class="img2"></div>
-          <div class="img3"></div>
-        </div>
-        <div class="img4"></div>
+    <div class="title">
+      <h1 class="dedaena welcome">შემოგიერთდი</h1>
+    </div>
+    <form action="first.html">
+      <div class="formm">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          class="formm input"
+          placeholder=" "
+          autocomplete="off"
+          required
+        /><br /><br />
+        <label for="username" class="geo label">შეიყვანეთ მომხმარებლის სახელი</label>
       </div>
-      <div class="main-div1">
-        <p class="div1-p alk">სახლური გემოები სახლის გარეთ!</p>
-        <a class="" href="##"
-          ><button class="letin-p dedaena">შემოგვიერთდი</button></a
-        >
+      <div class="formm">
+        
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="formm input"
+          placeholder=" "
+          required
+        />
+        <label for="password"class="geo label" >შეიყვანეთ პაროლი</label>
       </div>
-    </main>
-    <footer>
-      <div class="information-div">
-        <i class="fa-solid fa-circle-info fa-2xl" style="color: #dd8dce"></i>
-        <p class="information dedaena">საკონტაქტო ინფორმაცია</p>
+      <div class="formm">
+        
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="formm input"
+          placeholder=" "
+          required
+        />
+        <label for="password"class="geo label" >გაიმეორეთ პაროლი</label>
       </div>
-      <div class="footer_info">
-        <div class="addres">
-          <div class="circle">
-            <i class="fa-solid fa-phone fa-lg" style="color: #30b7d9"></i>
-          </div>
-          <div class="contact">
-            <p class="geo">ტელეფონი</p>
-            <a href="tel:431296466">0431396466</a>
-          </div>
-        </div>
-        <div class="addres">
-          <div class="circle">
-            <i
-              class="fa-solid fa-mobile-screen-button fa-lg"
-              style="color: #30b7d9"
-            ></i>
-          </div>
-          <div class="contact">
-            <p class="geo">მობილური</p>
-            <a href="tel:+995551486969">+995551486969</a>
-          </div>
-        </div>
-        <div class="addres">
-          <div class="circle">
-            <i
-              class="fa-solid fa-location-dot fa-lg"
-              style="color: #30b7d9"
-            ></i>
-          </div>
-          <div class="contact">
-            <p class="geo">მისამართი</p>
-            <a
-              href="https://www.google.com/maps/place/38+Avtomshenebeli+St,+Kutaisi/@42.266891,42.6764864,19z/data=!3m1!4b1!4m5!3m4!1s0x405c8cbf737699ef:0xc75d124076c5784e!8m2!3d42.26689!4d42.6771301"
-              >ავტომშენებლის,38</a
-            >
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="./script.js"></script>
+      <input type="submit" value="შესვლა" class="submit" />
+    </form>
   </body>
 </html>
